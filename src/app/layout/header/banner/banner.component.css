@@ -1,6 +1,6 @@
 .banner {
     position: fixed;
-    display: block;
+    display: none;
 }
 
 .banner-content {
