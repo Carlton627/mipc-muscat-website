@@ -12,16 +12,16 @@
 
 .banner-button {
     position: relative;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .btn-outline-info {
     color: #DAC168 !important;
-    border-color: #DAC168 !important;
+    border-color: transparent !important;
     background-color: transparent !important;
-}
+}   
 
 .btn-outline-info:hover {
     color: white !important;
-    background-color: #DAC168 !important;
+    background-color: transparent !important;
 }
