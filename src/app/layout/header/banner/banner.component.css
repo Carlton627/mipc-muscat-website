@@ -19,6 +19,7 @@
     color: #DAC168 !important;
     border-color: transparent !important;
     background-color: transparent !important;
+    border-radius: 50%;
 }   
 
 .btn-outline-info:hover {
