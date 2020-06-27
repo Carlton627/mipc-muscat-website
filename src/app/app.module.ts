@@ -1,17 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// fontawesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './layout/header/banner/banner.component';
-
-// fontawesome
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavigationComponent } from './layout/header/navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BannerComponent
+    BannerComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
