@@ -1,7 +1,8 @@
-<!-- animate__animated animate__fadeOutUp -->
-<section id="banner">
+<!-- TODO: add onscroll event for animation -->
+<section id="banner" [ngClass]="[bannerAnimationClass, bannerAnimationEffectClass]">
     <div class="card bg-dark text-white h-100 rounded-0 d-flex justify-content-center">
-        <img src="../../../../assets/banner_assets/banner_img.png" class="card-img img-fluid h-100" alt="">
+        <img src="../../../../assets/banner_assets/banner_img.png" 
+        class="card-img img-fluid h-100" alt="">
         <div class="banner-content card-img-overlay">
             <div class="container p-5">
                 <div class="row">

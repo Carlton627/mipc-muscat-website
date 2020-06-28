@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 // font awesome
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
@@ -10,15 +10,25 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class BannerComponent implements OnInit {
   faAngleDown = faAngleDown;
+
+  // these variables hold animate.css class values
+  bannerAnimationClass = '';
+  bannerAnimationEffectClass = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // TODO: Access banner section tag class proper
+  private updateBannerClass() {
+    this.bannerAnimationClass = 'animate__animated';
+    this.bannerAnimationEffectClass = 'animate__fadeOutUp';
+  }
+
   onScrollEvent = () => {
+    this.updateBannerClass();
   }
 
   onClickEvent = () => {
+    this.updateBannerClass();
   }
 }
