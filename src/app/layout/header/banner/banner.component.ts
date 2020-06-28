@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 // font awesome
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
@@ -15,4 +15,10 @@ export class BannerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // TODO: Access banner section tag class proper
+  onScrollEvent = () => {
+  }
+
+  onClickEvent = () => {
+  }
 }
