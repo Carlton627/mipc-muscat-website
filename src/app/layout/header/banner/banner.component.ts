@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// font awesome
+// font awesome icons
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
