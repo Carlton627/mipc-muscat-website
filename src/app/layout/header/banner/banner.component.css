@@ -4,16 +4,38 @@
     display: block;
 }
 
-.banner-content {
-    position: absolute;
-    top: 45%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.banner-content > div {
+    margin-top: 5%
 }
 
-.banner-button {
+/* .mipc-logo-container > img {
+    margin-right: auto;
+    margin-left: 0;
+    animation-name: translate-logo;
+    animation-duration: 3s;
+}
+
+@keyframes translate-logo {
+    from {
+        margin-left: 400px;
+    }
+    to {
+        margin-left: 0;
+    }
+} */
+
+.mipc-desc-text {
     position: relative;
-    margin-top: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* arrow button styles */
+
+.banner-button > button > fa-icon {
+    position: absolute;
+    bottom: 5%; left: 50%;
+    transform: translateX(-50%);
 }
 
 .btn-outline-info {

@@ -1,27 +1,32 @@
 <!-- TODO: add onscroll event for animation -->
-<section id="banner" [ngClass]="[bannerAnimationClass, bannerAnimationEffectClass]">
+<section id="banner" 
+[ngClass]="[bannerAnimationClass, bannerAnimationEffectClass, bannerAnimationSpeed]">
     <div class="card bg-dark text-white h-100 rounded-0 d-flex justify-content-center">
         <img src="../../../../assets/banner_assets/banner_img.png" 
         class="card-img img-fluid h-100" alt="">
         <div class="banner-content card-img-overlay">
-            <div class="container p-5">
-                <div class="row">
-                    <div class="col-lg-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mipc-logo-container container">
                         <img src="../../../../assets/banner_assets/mipc_logo_white.png" alt="" 
-                        class="mx-auto d-block" height="170" width="170">
+                        class="d-block mx-auto" height="300" width="300">
                     </div>
-                    <div class="col-lg-8 d-flex align-items-center">
-                        <p class="card-text text-center">This is a wider card with supporting text below as a natural lead-in to additional content.
-                            This content is a little bit longer.</p>
+                </div>
+                <div class="mipc-desc-text col-lg-8">
+                    <div class="container">
+                        <h3 class="card-title">
+                            Mary Immaculate Praise Community
+                        </h3>
+                        <p class="card-text">
+                            The English Prayer Group of Sts. Peter &amp; Paul Catholic Church, Muscat, Sultanate of Oman
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="banner-button">
-                <div class="container h-100 d-flex justify-content-center">
-                    <button (click)="onClickEvent()" class="btn btn-outline-info">
-                        <fa-icon [icon]="faAngleDown" size="3x"></fa-icon>
-                    </button>
-                </div>
+                <button (click)="onClickEvent()" class="btn btn-outline-info">
+                    <fa-icon [icon]="faAngleDown" size="3x"></fa-icon>
+                </button>
             </div>
         </div>
     </div>

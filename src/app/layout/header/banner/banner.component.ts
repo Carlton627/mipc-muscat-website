@@ -12,16 +12,17 @@ export class BannerComponent implements OnInit {
   faAngleDown = faAngleDown;
 
   // these variables hold animate.css class values
-  bannerAnimationClass = '';
-  bannerAnimationEffectClass = '';
+  bannerAnimationClass = 'animate__animated';
+  bannerAnimationEffectClass = 'animate__fadeInDownBig';
+  bannerAnimationSpeed = 'animate__faster';
   constructor() { }
 
   ngOnInit(): void {
   }
 
   private updateBannerClass() {
-    this.bannerAnimationClass = 'animate__animated';
-    this.bannerAnimationEffectClass = 'animate__fadeOutUp';
+    this.bannerAnimationEffectClass = 'animate__slideOutUp';
+    this.bannerAnimationSpeed = '';
   }
 
   onScrollEvent = () => {
