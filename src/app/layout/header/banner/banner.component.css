@@ -17,6 +17,17 @@
     position: relative;
     margin-top: auto;
     margin-bottom: auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.card-title {
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.card-text {
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* arrow button styles */
@@ -29,6 +40,9 @@
 
 .btn > fa-icon:hover {
     filter: drop-shadow(0 6mm 1rem black);
+}
+
+.btn > fa-icon:active {
 }
 
 .btn-outline-info {
