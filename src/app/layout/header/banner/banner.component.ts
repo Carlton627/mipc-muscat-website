@@ -17,8 +17,11 @@ export class BannerComponent implements OnInit {
   bannerAnimationEffectClass = 'animate__fadeInDownBig';
   bannerAnimationSpeed = 'animate__faster';
 
-  // these variables hold animate.css class values for the banner content container
+  // this variable holds animate.css class value for the banner content container
   bannerContentAnimation = 'animate__fadeInDownBig';
+
+  // this variable holds animate.css class value for the button exit
+  bannerButtonExit = 'animate__rotateIn';
 
   constructor() { }
 
@@ -29,6 +32,7 @@ export class BannerComponent implements OnInit {
     this.bannerAnimationEffectClass = 'animate__slideOutUp';
     this.bannerAnimationSpeed = '';
     this.bannerContentAnimation = 'animate__slideOutUp';
+    this.bannerButtonExit = 'animate__rotateOut';
   }
 
   onScrollEvent = () => {

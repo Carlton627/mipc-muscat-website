@@ -42,9 +42,6 @@
     filter: drop-shadow(0 6mm 1rem black);
 }
 
-.btn > fa-icon:active {
-}
-
 .btn-outline-info {
     color: #DAC168 !important;
     border-color: transparent !important;

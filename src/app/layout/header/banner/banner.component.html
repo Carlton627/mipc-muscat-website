@@ -1,5 +1,4 @@
 <!-- TODO: add onscroll event for animation -->
-<!-- TODO: flip arrow button 360degree on click -->
 <section id="banner" 
 [ngClass]="[animationClass, bannerAnimationEffectClass, bannerAnimationSpeed]">
     <div class="card bg-dark text-white h-100 rounded-0 d-flex justify-content-center">
@@ -26,9 +25,10 @@
                 </div>
             </div>
             </div>
-            <div class="banner-button">
-                <button (click)="onClickEvent()" class="btn btn-outline-info">
-                    <fa-icon [icon]="faAngleDown" size="3x"></fa-icon>
+            <div class="banner-button" (click)="onClickEvent()">
+                <button class="btn btn-outline-info">
+                    <fa-icon [ngClass]="[animationClass, bannerButtonExit]" 
+                    [icon]="faAngleDown" size="3x"></fa-icon>
                 </button>
             </div>
         </div>
