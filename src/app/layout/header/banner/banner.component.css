@@ -4,25 +4,14 @@
     display: block;
 }
 
-.banner-content > div {
-    margin-top: 5%
+.banner-content > div:first-child {
+    margin-top: 5%;
+    background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 25px;
 }
-
-/* .mipc-logo-container > img {
-    margin-right: auto;
-    margin-left: 0;
-    animation-name: translate-logo;
-    animation-duration: 3s;
-}
-
-@keyframes translate-logo {
-    from {
-        margin-left: 400px;
-    }
-    to {
-        margin-left: 0;
-    }
-} */
 
 .mipc-desc-text {
     position: relative;
@@ -32,10 +21,14 @@
 
 /* arrow button styles */
 
-.banner-button > button > fa-icon {
+.btn > fa-icon {
     position: absolute;
     bottom: 5%; left: 50%;
     transform: translateX(-50%);
+}
+
+.btn > fa-icon:hover {
+    filter: drop-shadow(0 6mm 1rem black);
 }
 
 .btn-outline-info {

@@ -11,10 +11,15 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 export class BannerComponent implements OnInit {
   faAngleDown = faAngleDown;
 
-  // these variables hold animate.css class values
-  bannerAnimationClass = 'animate__animated';
+  animationClass = 'animate__animated';
+
+  // these variables hold animate.css class values for the whole banner
   bannerAnimationEffectClass = 'animate__fadeInDownBig';
   bannerAnimationSpeed = 'animate__faster';
+
+  // these variables hold animate.css class values for the banner content container
+  bannerContentAnimation = 'animate__fadeInDownBig';
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,6 +28,7 @@ export class BannerComponent implements OnInit {
   private updateBannerClass() {
     this.bannerAnimationEffectClass = 'animate__slideOutUp';
     this.bannerAnimationSpeed = '';
+    this.bannerContentAnimation = 'animate__slideOutUp';
   }
 
   onScrollEvent = () => {
