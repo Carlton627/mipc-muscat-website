@@ -2,6 +2,7 @@
     height: 100%;
     position: fixed;
     display: block;
+    z-index: 9;
 }
 
 .banner-content > div:first-child {
@@ -22,6 +23,7 @@
 
 .card-title {
     font-weight: 700;
+    font-size: 40px;
     letter-spacing: 2px;
 }
 
@@ -32,13 +34,12 @@
 
 /* arrow button styles */
 
-.banner-button > svg {
+.banner-button {
     position: absolute;
     bottom: 5%; left: 50%;
     transform: translateX(-50%);
     width: 30px;
     height: 30px;
-    transform: rotate(90deg);   
     fill: #DAC168; 
 }
 

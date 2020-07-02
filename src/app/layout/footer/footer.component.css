@@ -1,0 +1,24 @@
+footer {
+    height: 100vh;
+    z-index: 1;
+}
+
+#footer-main {
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#footer-upper {
+    height: 80%;
+}
+
+#footer-upper > h3 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+#footer-lower {
+    height: 20%;
+    background-color: #94001B;
+}
