@@ -1,14 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// fontawesome
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// Layout Components
 import { BannerComponent } from './layout/header/banner/banner.component';
 import { NavigationComponent } from './layout/header/navigation/navigation.component';
 import { FooterComponent } from './layout/footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +19,7 @@ import { FooterComponent } from './layout/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

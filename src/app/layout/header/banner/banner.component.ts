@@ -1,16 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-// font awesome icons
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
-
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent implements OnInit {
-  faAngleDown = faAngleDown;
-
   animationClass = 'animate__animated';
 
   // these variables hold animate.css class values for the whole banner
@@ -21,7 +16,7 @@ export class BannerComponent implements OnInit {
   bannerContentAnimation = 'animate__fadeInDownBig';
 
   // this variable holds animate.css class value for the button exit
-  bannerButtonExit = 'animate__rotateIn';
+  bannerButtonAnimation = 'animate__rotateIn';
 
   constructor() { }
 
@@ -32,7 +27,7 @@ export class BannerComponent implements OnInit {
     this.bannerAnimationEffectClass = 'animate__slideOutUp';
     this.bannerAnimationSpeed = '';
     this.bannerContentAnimation = 'animate__slideOutUp';
-    this.bannerButtonExit = 'animate__rotateOut';
+    this.bannerButtonAnimation = 'animate__rotateOut';
   }
 
   onScrollEvent = () => {
