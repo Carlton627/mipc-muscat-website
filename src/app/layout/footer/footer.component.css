@@ -43,3 +43,7 @@ ul > li:hover {
 .show {
     display: block;
 }
+
+.btn {
+    border-radius: 25px;
+}
