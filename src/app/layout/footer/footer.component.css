@@ -40,10 +40,3 @@ ul > li:hover {
     fill: #DAC168;
 }
 
-.show {
-    display: block;
-}
-
-.btn {
-    border-radius: 25px;
-}

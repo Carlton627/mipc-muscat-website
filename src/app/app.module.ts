@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './layout/header/banner/banner.component';
 import { NavigationComponent } from './layout/header/navigation/navigation.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { SendMessageFormComponent } from './components/send-message-form/send-message-form.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     AppComponent,
     BannerComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    SendMessageFormComponent
   ],
   imports: [
     BrowserModule,
