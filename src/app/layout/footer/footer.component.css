@@ -5,11 +5,11 @@ footer {
 
 #footer-main {
     height: 100%;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 #footer-upper {
-    height: 80%;
+    height: 90%;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #footer-upper > h3 {
@@ -19,6 +19,26 @@ footer {
 }
 
 #footer-lower {
-    height: 20%;
+    height: 10%;
     background-color: #94001B;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.primary-color {
+    color: #94001B;
+}
+
+ul > li {
+    list-style: none;
+    padding-top: 2px;
+}
+
+ul > li:hover {
+    text-decoration: underline;
+    text-decoration-color: #94001B;
+    color: #DAC168;
+}
+
+#social li img {
+    fill: gray;
 }
