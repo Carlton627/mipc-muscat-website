@@ -1,12 +1,9 @@
 footer {
     z-index: 1;
-}
-
-#footer-upper {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#footer-upper > h3 {
+footer h3 {
     font-size: 45px;
     letter-spacing: 2px;
     word-spacing: 3px;
@@ -20,13 +17,12 @@ footer {
     box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
 }
 
-#footer-lower ol li {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
 .primary-color {
     color: #94001B;
+}
+
+.secondary-color {
+    color: #DAC168;
 }
 
 ul > li {
@@ -48,3 +44,10 @@ ul > li:hover {
     fill: #DAC168;
 }
 
+iframe {
+    box-shadow: 0 3px 2px 1px grey;
+}
+
+iframe:hover {
+    box-shadow: 0 8px 4px 1px grey;
+}
