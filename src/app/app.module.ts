@@ -9,6 +9,8 @@ import { BannerComponent } from './layout/header/banner/banner.component';
 import { NavigationComponent } from './layout/header/navigation/navigation.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { SendMessageFormComponent } from './components/send-message-form/send-message-form.component';
+import { HomeComponent } from './pages/home/home.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { SendMessageFormComponent } from './components/send-message-form/send-me
     BannerComponent,
     NavigationComponent,
     FooterComponent,
-    SendMessageFormComponent
+    SendMessageFormComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
