@@ -43,11 +43,46 @@ ul > li:hover {
 #social > li svg:hover {
     fill: #DAC168;
 }
-
-iframe {
+ 
+/* iframe {
     box-shadow: 0 3px 2px 1px grey;
 }
 
 iframe:hover {
     box-shadow: 0 8px 4px 1px grey;
+    animation: map-shadow 500ms ease;
+}
+
+
+@keyframes map-shadow {
+    from {
+        box-shadow: 0 3px 2px 1px grey
+    } to {
+        box-shadow: 0 8px 4px 1px grey
+    }
+}  */
+
+iframe {
+    box-shadow: 0 3px 2px 1px grey;
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+iframe::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+iframe:hover {
+    box-shadow: 0 8px 4px 2px grey;
+    -webkit-transform: scale(1.05, 1.0.5);
+    transform: scale(1.05, 1.05);
+}
+
+iframe:hover::after {
+    opacity: 1;
 }
