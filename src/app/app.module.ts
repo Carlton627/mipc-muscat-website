@@ -8,7 +8,11 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './layout/header/banner/banner.component';
 import { NavigationComponent } from './layout/header/navigation/navigation.component';
 import { FooterComponent } from './layout/footer/footer.component';
+
+// Functional Components
 import { SendMessageFormComponent } from './components/send-message-form/send-message-form.component';
+
+// Page Components
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
