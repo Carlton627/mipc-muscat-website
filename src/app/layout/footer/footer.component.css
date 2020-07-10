@@ -43,24 +43,6 @@ ul > li:hover {
 #social > li svg:hover {
     fill: #DAC168;
 }
- 
-/* iframe {
-    box-shadow: 0 3px 2px 1px grey;
-}
-
-iframe:hover {
-    box-shadow: 0 8px 4px 1px grey;
-    animation: map-shadow 500ms ease;
-}
-
-
-@keyframes map-shadow {
-    from {
-        box-shadow: 0 3px 2px 1px grey
-    } to {
-        box-shadow: 0 8px 4px 1px grey
-    }
-}  */
 
 iframe {
     box-shadow: 0 3px 2px 1px grey;
