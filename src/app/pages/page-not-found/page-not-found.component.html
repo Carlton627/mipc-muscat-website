@@ -1,6 +1,30 @@
-<section id="error-page">
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-        <button (click)="sendUserToHome()" class="btn btn-outline-secondary">Back To MIPC</button>
+<!-- TODO: check out router animations -->
+<section id="error-page"
+[ngClass]="[animationClass, errorAnimationEffectClass, errorAnimationSpeed]">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-7 my-auto">
+                <img id="img-not-found" src="../../../assets/page_not_found_assets/pageNotFound.png" 
+                height="200" width="350" alt="">
+                <h3 class="font-size-lg">Looks like you have lost your way</h3>
+                <p class="font-size-md">What you're looking for isn't here!</p>
+                <button 
+                (click)="sendUserToHome()" (mouseover)="animateArrow()" (mouseout)="animateArrow()"
+                class="btn btn-outline-secondary mt-4">
+                    Take me back
+                    <span [ngClass]="{'hover-display': !showArrow}">
+                        <svg class="pb-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <path
+                            d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center">
+                <img id="void" src="../../../assets/page_not_found_assets/void.svg" 
+                height="400" width="400" alt="">
+            </div>
+        </div> 
     </div>
 </section>

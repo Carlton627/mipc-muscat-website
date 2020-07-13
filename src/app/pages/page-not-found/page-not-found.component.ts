@@ -7,13 +7,31 @@ import { Router } from '@angular/router';
   styleUrls: ['./page-not-found.component.css']
 })
 export class PageNotFoundComponent implements OnInit {
+  animationClass = 'animate__animated';
+  errorAnimationEffectClass = 'animate__fadeInDownBig';
+  errorAnimationSpeed = 'animate__faster';
+
+  showArrow = false;
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  private updateBannerClass() {
+    this.errorAnimationEffectClass = 'animate__slideOutRight';
+    this.errorAnimationSpeed = '';
+  }
+
+  // TODO: Add spinner for seamless loading if route animation don't work
   sendUserToHome = () => {
-    this.router.navigateByUrl('/');
+    this.updateBannerClass();
+    setTimeout(() => {
+      this.router.navigateByUrl('/');
+    }, 800);
+  }
+
+  animateArrow = () => {
+    this.showArrow = !this.showArrow;
   }
 }
