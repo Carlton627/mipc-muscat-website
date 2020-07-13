@@ -34,16 +34,4 @@ body {
     box-shadow: 0 10px 8px 0 gray;
 }
 
-.btn:active:focus, 
-.btn:focus {
-    outline: 0 !important;
-    outline-offset: 0 !important;
-    background-image: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    background-color: white;
-    color: #94001B;
-    fill: #94001B;
-    border-color: #94001B;
-}
 
