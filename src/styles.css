@@ -19,6 +19,20 @@ body {
     width: 100%;
 }
 
+.primary-color {
+    color: #94001B;
+}
+
+.secondary-color {
+    color: #DAC168;
+}
+
+h3 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
 .btn {
     border-radius: 25px;
     color: #94001B;
@@ -28,10 +42,14 @@ body {
 }
 
 .btn:hover {
+    transform: scale(1.025, 1.025);
     background-color: #94001B;
+    border-color: #94001B;
     color: #DAC168;
     fill: #DAC168;
     box-shadow: 0 10px 8px 0 gray;
 }
 
-
+.btn:active {
+    transform: scale(1, 1);
+}

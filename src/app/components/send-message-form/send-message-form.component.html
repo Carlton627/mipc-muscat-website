@@ -1,12 +1,14 @@
-<!-- change input border color on active -->
-<form>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
     <div class="form-group">
         <label for="emailInput">Email Address</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="emailInput" placeholder="name@example.com"
+        name="email" ngModel required>
     </div>
     <div class="form-group">
         <label for="messageInput">Type your message here</label>
-        <textarea name="" id="messageInput" rows="3" class="form-control"></textarea>
+        <textarea name="" id="messageInput" rows="3" class="form-control" 
+        name="message" ngModel required></textarea>
     </div>
-    <button type="" class="btn btn-outline-secondary mt-2">Send Message</button>
+    <button type="submit" [disabled]="!f.form.valid"
+    class="btn btn-outline-secondary mt-2">Send Message</button>
 </form>

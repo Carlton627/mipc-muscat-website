@@ -1,0 +1,5 @@
+input:active, textarea:active, 
+input:focus, textarea:focus {
+    border-color: #94001B;
+    box-shadow: 2px 2px 3px 1px grey;
+}

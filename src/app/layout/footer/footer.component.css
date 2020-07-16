@@ -2,26 +2,12 @@ footer {
     z-index: 1;
 }
 
-footer h3 {
-    font-size: 45px;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-}
-
 #footerLower {
     background-color: #94001B;
     font-family: 'Josefin Sans', sans-serif;
     -webkit-box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
     box-shadow: 0px -2px 3px rgba(50, 50, 50, 0.75);
-}
-
-.primary-color {
-    color: #94001B;
-}
-
-.secondary-color {
-    color: #DAC168;
 }
 
 ul > li {

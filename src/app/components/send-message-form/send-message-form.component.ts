@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-send-message-form',
@@ -10,5 +11,11 @@ export class SendMessageFormComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(f: NgForm) {
+    const {email, message} = f.form.value;
+    console.log(email);
+    console.log(message);
   }
 }
