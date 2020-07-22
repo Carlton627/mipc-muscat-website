@@ -46,8 +46,8 @@ iframe::after {
 
 iframe:hover {
     box-shadow: 0 8px 4px 2px grey;
-    -webkit-transform: scale(1.05, 1.0.5);
-    transform: scale(1.05, 1.05);
+    -webkit-transform: scale(1.025, 1.025);
+    transform: scale(1.025, 1.025);
 }
 
 iframe:hover::after {

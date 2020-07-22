@@ -1,8 +1,10 @@
-/* global home styles */
 
 img {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h6 {
@@ -10,16 +12,49 @@ h6 {
     letter-spacing: 1px;
 }
 
-/* send message section styles */
-
-#sendMessage {
+#sendMessage, 
+#coreTeam {
     height: 100vh;
     width: 100%;
 }
 
-#sendMessage > .container {
+#sendMessage > .container,
+#coreTeam > .container {
     padding: 0;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
+
+.img-background {
+    background-image: url('../../../assets/home_assets/undraw_Letter_re_8m03.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 500px 260px;
+}
+
+/* .card,
+.card img,
+.card-img-overlay {
+    border-radius: 15px;
+    height: 450px;
+}
+
+.card-img-overlay {
+    background-color: white;
+    opacity: 0;
+    transition: all 550ms 0.2s;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.9;
+    border-color: #DAC168 !important;
+}
+
+.card-overlay-content {
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+} */
+
+/* scrollable cards: https://youtu.be/2_E5uoiLCLY */

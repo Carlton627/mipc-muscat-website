@@ -27,6 +27,12 @@ body {
     color: #DAC168;
 }
 
+.center-vertically {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 h3 {
     font-size: 45px;
     letter-spacing: 2px;
@@ -52,4 +58,8 @@ h3 {
 
 .btn:active {
     transform: scale(1, 1);
+}
+
+.btn:disabled {
+    box-shadow: none;
 }
