@@ -19,6 +19,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 // Import Components
 import { FormsModule } from '@angular/forms';
+import { FeatureCardComponent } from './components/feature-card/feature-card.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     SendMessageFormComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FeatureCardComponent
   ],
   imports: [
     BrowserModule,

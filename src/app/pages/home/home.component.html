@@ -6,19 +6,23 @@
 
 <section id="activities">activites</section>
 -->
-<!--
-<div class="card border">
-    <img src="../../../assets/mipc_logo.png" alt="" class="img-fluid">
-    <div class="card-img-overlay border">
-        <div class="card-overlay-content">
-            <h6 class="card-title">Carlton Rodrigues</h6>
-            <p class="card-text">Description Lorem ipsum dolor sit.</p>
-        </div>
-    </div>
-</div>
+
 <section id="coreTeam">
-team TODO: create separate reusable card component which takes img-src, name and desc as params
-</section> -->
+<!-- TODO: create separate reusable card component which takes img-src, name and desc as params -->
+<div class="d-flex">
+    <app-feature-card 
+    [cardTitle]="'Blaise Rodrigues'"
+    [cardDesc]="'Lorem ipsum dolor set amit.'"
+    [imgSrc]="'../../../assets/mipc_logo.png'">
+    </app-feature-card>
+    
+    <app-feature-card 
+    [cardTitle]="'Carlton Rodrigues'" 
+    [cardDesc]="'Dorem ilsum solor dot amet.'"
+    [imgSrc]="'../../../assets/mipc_logo.png'">
+    </app-feature-card>
+</div>
+</section>
 
 <section id="sendMessage">
     <div class="container">

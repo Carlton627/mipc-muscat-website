@@ -1,0 +1,31 @@
+img {
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card,
+.card img,
+.card-img-overlay {
+    border-radius: 15px;
+    height: 450px;
+}
+
+.card-img-overlay {
+    background-color: white;
+    opacity: 0;
+    transition: all 550ms 0.2s;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.9;
+    border: none;
+    border-color: #DAC168 !important;
+}
+
+.card-overlay-content {
+    position: relative;
+    top: 100%;
+    transform: translateY(-100%);
+} 
