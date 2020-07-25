@@ -9,6 +9,20 @@ h6 {
     width: 100%;
 }
 
+.card-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#coreTeam {
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0px
+}
+
 #sendMessage > .container,
 #coreTeam > .container {
     padding: 0;
@@ -18,10 +32,37 @@ h6 {
 }
 
 .img-background {
-    background-image: url('../../../assets/home_assets/undraw_Letter_re_8m03.svg');
+    background-image: url('../../../assets/home_assets/send_message.png');
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 500px 260px;
+    background-position: 80%;
+    background-size: 200px 250px;
 }
 
-/* scrollable cards: https://youtu.be/2_E5uoiLCLY */
+app-feature-card {
+    padding-left: 2rem;
+}
+
+svg {
+    fill: #DAC168;
+    transition: all 200ms;
+}
+
+svg:hover {
+    transform: scale(1.1, 1.1);
+}
+
+svg:active {
+    transform: scale(1, 1);
+}
+
+#left {
+    position: absolute;
+    top: 50%;
+}
+
+#right {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateX(-100%);
+}

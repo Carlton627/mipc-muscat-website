@@ -1,6 +1,7 @@
-<!-- <section id="slider">slide</section>
+<!-- 
+<section id="slider">slide</section>
 
-<section id="aboutUs" class="text-center">
+<section id="aboutUs">
     about
 </section>
 
@@ -8,20 +9,33 @@
 -->
 
 <section id="coreTeam">
-<!-- TODO: create separate reusable card component which takes img-src, name and desc as params -->
-<div class="d-flex">
-    <app-feature-card 
-    [cardTitle]="'Blaise Rodrigues'"
-    [cardDesc]="'Lorem ipsum dolor set amit.'"
-    [imgSrc]="'../../../assets/mipc_logo.png'">
-    </app-feature-card>
-    
-    <app-feature-card 
-    [cardTitle]="'Carlton Rodrigues'" 
-    [cardDesc]="'Dorem ilsum solor dot amet.'"
-    [imgSrc]="'../../../assets/mipc_logo.png'">
-    </app-feature-card>
-</div>
+    <div class="center-vertically">
+        <h3 class="pl-4">Core <span class="primary-color">Team</span></h3>
+        <div (scroll)="scrollEvent(cardList, $event)"
+        class="card-container ml-2 mr-2 pb-2" #cardList>
+            <ng-container *ngFor='let property of cardData'>
+                <app-feature-card 
+                [cardTitle]="property.cardTitle"
+                [cardDesc]="property.cardDesc"
+                [imgSrc]="property.imgSrc">
+                </app-feature-card>
+            </ng-container>
+        
+            <div id="left" *ngIf="showLeftButton(cardList)" 
+            (click)="scrollCardsHorizontallyLeft(cardList)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                    <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+                </svg>
+            </div>
+
+            <div id="right" *ngIf="showRightButton(cardList)"
+            (click)="scrollCardsHorizontallyRight(cardList)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                    <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
+                </svg>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="sendMessage">
