@@ -6,8 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./feature-card.component.css']
 })
 export class FeatureCardComponent implements OnInit {
+  // properties from home component
   @Input() imgSrc: string;
   @Input() cardTitle: string;
+  @Input() cardName: string;
   @Input() cardDesc: string;
 
   constructor() { }

@@ -8,12 +8,16 @@
 -->
 
 <section id="aboutUs">
-    <div class="center-vertically">
-        <h3 class="pl-4">Meet the <span class="primary-color">awesome</span> people who make things work</h3>
+    <div class="core-team center-vertically">
+        <h3 class="pl-4">Meet the 
+            <span class="primary-color">awesome</span> 
+            people who make 
+            <span class="primary-color">things</span> work</h3>
         <div (scroll)="scrollEvent(cardList, $event)"
         class="card-container ml-2 mr-2 pb-2" #cardList>
             <ng-container *ngFor='let property of cardData'>
                 <app-feature-card 
+                [cardName]="property.cardName"
                 [cardTitle]="property.cardTitle"
                 [cardDesc]="property.cardDesc"
                 [imgSrc]="property.imgSrc">
