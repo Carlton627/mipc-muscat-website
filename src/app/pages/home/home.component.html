@@ -1,18 +1,45 @@
+<!-- 
 <section id="slider">
-    slider
 </section>
-<!--
+
 <section id="activities">
     activites use parallax here
+    news and events
 </section>
 -->
+<section>blog</section>
 
-<section id="aboutUs">
-    <div class="core-team center-vertically">
+<section id="about">
+    <div class="testimonies">
+        <h3 class="pl-4">Testimonies in <span class="primary-color">Christ</span></h3>
+        <div class="card-container">
+            <!-- TODO: create custom component -->
+            <!-- Testimonies should be updated and arranged based on date posted -->
+            <div class="card" style="width: 18rem; height: 16rem;">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Placeat voluptatum veritatis quis saepe accusantium praesentium voluptas, eaque,
+                        totam dolore sit, inventore libero maiores doloremque eum harum asperiores esse iste atque
+                        architecto aspernatur officia temporibus beatae!</p>
+                </div>
+            </div>
+        </div>
+        <div class="read-more">
+            <a href="#" class="link-to-testimonies">
+                Read More
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="coreTeam">
+    <div class="center-vertically">
         <h3 class="pl-4">Meet the 
-            <span class="primary-color">awesome</span> 
-            people who make 
-            <span class="primary-color">things</span> work</h3>
+            <span class="primary-color">people</span> 
+            who make 
+            <span class="primary-color">things</span> happen
+        </h3>
+        
         <div (scroll)="scrollEvent(cardList, $event)"
         class="card-container ml-2 mr-2 pb-2" #cardList>
             <ng-container *ngFor='let property of cardData'>
@@ -41,6 +68,7 @@
     </div>
 </section>
 
+<!-- TODO: change send message layout completely -->
 <section id="sendMessage">
     <div class="container">
         <div class="row">

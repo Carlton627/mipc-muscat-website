@@ -1,70 +1,81 @@
-h6 {
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
 #sendMessage, 
-#aboutUs {
+#coreTeam {
     height: 100vh;
     width: 100%;
 }
 
-.card-container {
+#coreTeam .card-container {
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
 }
 
-#aboutUs {
+#coreTeam {
   scrollbar-width: 0px;
+}
+
+#coreTeam app-feature-card {
+    padding-left: 2rem;
+}
+
+#coreTeam svg {
+    fill: #DAC168;
+    transition: all 200ms;
+}
+
+#coreTeam svg:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#coreTeam svg:active {
+    transform: scale(1, 1);
+}
+
+#coreTeam #left {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+#coreTeam #right {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateX(-100%);
+    z-index: 2;
 }
 
 *::-webkit-scrollbar {
   width: 0px
 }
 
-#sendMessage > .container {
+#sendMessage .container {
     padding: 0;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.img-background {
+#sendMessage .img-background {
     background-image: url('../../../assets/home_assets/send_message.png');
     background-repeat: no-repeat;
     background-position: 80%;
     background-size: 200px 250px;
 }
 
-app-feature-card {
-    padding-left: 2rem;
+
+#about {
+    background-color: white;
 }
 
-svg {
-    fill: #DAC168;
-    transition: all 200ms;
+#about .card {
+    overflow: hidden;
 }
 
-svg:hover {
-    transform: scale(1.1, 1.1);
+#about .card-container {
+    display: flex;
 }
 
-svg:active {
-    transform: scale(1, 1);
-}
-
-#left {
-    position: absolute;
-    top: 50%;
-}
-
-#right {
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    transform: translateX(-100%);
-}
 
 /* TODO: highlighted note for parallax css styling
 .parallax {
