@@ -1,7 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { cardData } from 'src/utils/feature_card_data';
+import { CardData } from 'src/utils/feature_card_data';
 import { interval } from 'rxjs';
 import { takeWhile, tap } from 'rxjs/operators';
+
+export enum TeamType {
+  coreTeam,
+  praiseNW,
+  other,
+}
 
 @Component({
   selector: 'app-home',
@@ -10,7 +16,9 @@ import { takeWhile, tap } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
 
-  cardData = cardData;
+  teamEnum = TeamType;
+  isOpen = false;
+  cardData = null;
 
   constructor() { }
 
@@ -19,6 +27,30 @@ export class HomeComponent implements OnInit {
 
 
   // core team section [start]
+
+  handleButtonClick = (arg: TeamType) => {
+    if (arg === TeamType.coreTeam) {
+      this.toggleCardDisplay(CardData.coreTeam);
+    } else if (arg === TeamType.praiseNW) {
+      this.toggleCardDisplay(CardData.praiseNW);
+    } else if (arg === TeamType.other) {
+      this.toggleCardDisplay(CardData.other);
+    }
+  }
+
+  private toggleCardDisplay(arg: CardData) {
+    if (!this.isOpen) {
+      this.cardData = arg;
+      this.isOpen = true;
+    } else if (this.isOpen && this.cardData !== arg) {
+      this.cardData = arg;
+      this.isOpen = true;
+    } else {
+      this.cardData = null;
+      this.isOpen = false;
+    }
+  }
+
   scrollCardsHorizontallyLeft = (el: Element) => {
     const animTimeMs = 350;
     const pixelsToMove = 315;

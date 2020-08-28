@@ -9,38 +9,21 @@
 -->
 <section>blog</section>
 
-<section id="about">
-    <div class="testimonies">
-        <h3 class="pl-4">Testimonies in <span class="primary-color">Christ</span></h3>
-        <div class="card-container">
-            <!-- TODO: create custom component -->
-            <!-- Testimonies should be updated and arranged based on date posted -->
-            <div class="card" style="width: 18rem; height: 16rem;">
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Placeat voluptatum veritatis quis saepe accusantium praesentium voluptas, eaque,
-                        totam dolore sit, inventore libero maiores doloremque eum harum asperiores esse iste atque
-                        architecto aspernatur officia temporibus beatae!</p>
-                </div>
-            </div>
-        </div>
-        <div class="read-more">
-            <a href="#" class="link-to-testimonies">
-                Read More
-            </a>
-        </div>
-    </div>
-</section>
-
 <section id="coreTeam">
-    <div class="center-vertically">
+    <div class="">
         <h3 class="pl-4">Meet the 
             <span class="primary-color">people</span> 
             who make 
             <span class="primary-color">things</span> happen
         </h3>
+
+        <!-- TODO: the feature card conditional render and switching functionality -->
+
+        <button (click)="handleButtonClick(teamEnum.coreTeam)">Coreteam</button>
+        <button (click)="handleButtonClick(teamEnum.praiseNW)">P&amp;W</button>
+        <button (click)="handleButtonClick(teamEnum.other)">Other</button>
         
-        <div (scroll)="scrollEvent(cardList, $event)"
+        <div *ngIf="cardData" (scroll)="scrollEvent(cardList, $event)"
         class="card-container ml-2 mr-2 pb-2" #cardList>
             <ng-container *ngFor='let property of cardData'>
                 <app-feature-card 
@@ -51,7 +34,7 @@
                 </app-feature-card>
             </ng-container>
         
-            <div id="left" *ngIf="showLeftButton(cardList)" 
+            <!-- <div id="left" *ngIf="showLeftButton(cardList)" 
             (click)="scrollCardsHorizontallyLeft(cardList)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
                     <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
@@ -63,7 +46,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
                     <path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z" />
                 </svg>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -73,8 +56,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-7 img-background">
-                <div class="">
-                    <h3>Reach <span class="primary-color">out!</span></h3>
+                <div class="center-vertically">
+                    <h3 class="">Reach <span class="primary-color">out!</span></h3>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
             </div>
