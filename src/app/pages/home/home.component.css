@@ -1,8 +1,19 @@
-/* #sendMessage, 
-#coreTeam {
-    height: 100vh;
-    width: 100%;
-} */
+#coreTeam .selector-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* TODO: add active pseudo class property */
+#coreTeam .team-selector {
+    font-size: 30px;
+    min-width: 400px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
 
 #coreTeam .card-container {
     display: flex;
@@ -11,7 +22,7 @@
 }
 
 #coreTeam {
-  scrollbar-width: 0px;
+    scrollbar-width: 0px;
 }
 
 #coreTeam app-feature-card {
@@ -46,7 +57,7 @@
 }
 
 *::-webkit-scrollbar {
-  width: 0px
+    width: 0px
 }
 
 #sendMessage {
@@ -60,7 +71,21 @@
     background-size: 200px 250px;
 }
 
+#photoGallery .back-drop {
+    background-color: lightgray;
+    min-height: 400px;
+    z-index: 0;
+}
 
+#photoGallery img {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    transform: scale(1.25, 1.25)
+                translateY(30%);
+    transform-origin: center;
+}
 
 
 /* TODO: highlighted note for parallax css styling

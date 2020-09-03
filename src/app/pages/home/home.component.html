@@ -7,7 +7,21 @@
     news and events
 </section>
 -->
-<section>blog</section>
+<section id="banner"></section>
+
+<section id="photoGallery" class="mb-5 mt-5">
+    <div class="row">
+        <div class="col-lg-7 back-drop">
+            announcement part
+            <button class="btn btn-success">More</button>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-fluid"
+            src="../../../assets/not_the_norm.jpg">
+        </div>
+        <div class="col-lg-1 back-drop"></div>
+    </div>
+</section>
 
 <section id="coreTeam">
     <div class="">
@@ -17,11 +31,21 @@
             <span class="primary-color">things</span> happen
         </h3>
 
-        <!-- TODO: the feature card conditional render and switching functionality -->
-
-        <button (click)="handleButtonClick(teamEnum.coreTeam)">Coreteam</button>
-        <button (click)="handleButtonClick(teamEnum.praiseNW)">P&amp;W</button>
-        <button (click)="handleButtonClick(teamEnum.other)">Other</button>
+        <!-- TODO: Complete the design -->
+        <div class="selector-container ml-2 mr-2 pb-2">
+            <div class="card team-selector">
+                <div (click)="handleButtonClick(teamEnum.coreTeam)" class="card-text">Core Team</div>
+            </div>
+            <div class="card team-selector">
+                <div (click)="handleButtonClick(teamEnum.praiseNW)" class="card-text">P &amp; W</div>
+            </div>
+            <div class="card team-selector">
+                <div (click)="handleButtonClick(teamEnum.other)" class="card-text">other</div>
+            </div>
+            <div class="card team-selector">
+                <div (click)="handleButtonClick(teamEnum.other)" class="card-text">other</div>
+            </div>  
+        </div>
         
         <div *ngIf="cardData" (scroll)="scrollEvent(cardList, $event)"
         class="card-container ml-2 mr-2 pb-2" #cardList>
@@ -51,7 +75,6 @@
     </div>
 </section>
 
-<!-- TODO: change send message layout completely -->
 <section id="sendMessage">
     <div class="container">
         <div class="row">

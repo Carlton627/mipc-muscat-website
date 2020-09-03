@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   teamEnum = TeamType;
   isOpen = false;
-  cardData = null;
+  cardData: CardData = CardData.coreTeam;
 
   constructor() { }
 
